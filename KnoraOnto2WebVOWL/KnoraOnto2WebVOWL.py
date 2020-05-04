@@ -4,6 +4,7 @@
 
 #### Once the transformation is done, upload the ontology in http://visualdataweb.de/webvowl/. Customize the settings, for example, the degree of collapsing can be adjusted when there are lots of nodes ####
 
+#### Attention to full points at the end of each graph ...
 
 import re
 
@@ -18,12 +19,3 @@ outfile.write(new_data)
 outfile.close
 # output can be processed by http://visualdataweb.de/webvowl/
 
-
-
-# compile patterns does not work .. but it does elsewhere .. something with the infile
-# patterns = [('rdf', 'a'),
-#            ('CLASSES', ''),
-#            [';\n(\s)*rdfs:subClassOf knora-base:(.)*,', 'ö']]
-# for (p1,p2) in patterns:
-#    p = re.compile(p1)
-#    new_filedata = p.sub(p2,filedata)
